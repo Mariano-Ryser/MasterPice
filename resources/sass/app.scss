@@ -1,0 +1,82 @@
+// $mariano-color: rgb(0, 0, 0);
+
+
+html{
+    color:white
+}
+
+body{
+    background-color: rgb(29, 56, 63);
+    text-align: center;
+    }
+
+input {
+    margin: 3.2px;
+}
+/* links de registro y password olvidada */
+
+label{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, rgb(194, 194, 194));
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    padding: 6px 5px;
+    border-width: 0px;
+    border-style: none;
+    border-color: none;
+    border-image: initial;
+    margin:5px 0px ;
+    margin-bottom: 10px;
+}
+
+button{
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    transition: 0.3s;
+    border: solid black 1px;
+}
+
+button:hover{
+    background-color: #489ED7;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 6px;
+    border: solid black 1px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    border-style: none;
+    border-color: white;
+    border-image: initial;
+}
+#remember_me{
+    cursor: pointer;
+}
+h1 {color: rgb(255, 228, 109);}
+h2 {color: rgb(161, 161, 161);}
+h3 {color: rgb(214, 209, 183);}
+h4 {color: rgb(251, 236, 161);}
+p { color: white;}
