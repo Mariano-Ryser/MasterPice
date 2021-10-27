@@ -49,7 +49,7 @@
           <br>
           <p>Aca se comienza a escribir mecanografia, da un poco de pena al principio empezar a escribir, y no tener nada para
               expresar, solo dejate llevar y escribir sin problemas, lo primero que te salga del a cabeza, esa es la realidad, posiblemente pienses que las cosas que pasan pasan por
-              
+
           </p>
       </div>
    <p> PNL
@@ -565,14 +565,21 @@
     La verdad es que hay varias formas de realizar una misma tarea, por esa razón, permitirte probar nuevos enfoques y nuevas actitudes puede ser la pieza que falta para mejorar tu forma de interactuar con todos los eventos de tu vida.
 
 
-
-
-
-
-
-
-
 </p>
+
+
+<h1>O.C.M</h1>
+<p>Aqui estamos nuevamente escribiendo cosas sin sentido, solamente quiero encontrar un trabajo.</p>
+<h2>y porque?</h2>
+<br>
+ <p>El porque es muy sencillo, ya siento que no aprendo nada, solo tengo que buscar por mi cuenta en un proyecto que no tiene fin,
+     me siento frustrado, un poco fracasado, estoy escribiendo cosas sin sentido, tanto por hacer sin ningun sentido alguno.
+ </p>
+
+
+
+
+
   </div>
 
    <!-- Optional JavaScript; choose one of the two! -->

@@ -58,3 +58,7 @@ Route::get('/en', function () {
 Route::get('/mecano', function () {
     return view('mecanografi');
 });
+
+Route::get('/test', function () {
+    return view('test');
+});

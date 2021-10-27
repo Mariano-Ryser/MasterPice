@@ -28,16 +28,16 @@
  }
 
  a:-webkit-any-link {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     text-decoration: underline;
     font-size: 12px;
 }
 
          .loginBox{
-            background-color: rgb(27, 108, 189);
+            background-color: rgb(180, 154, 36);
              padding-top: 94px;
-             height: 410px;
+             height: 510px;
              width: 370px;
              /* border: solid rgb(85, 85, 85) 1px; */
              border-radius: 5px;

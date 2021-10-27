@@ -35,21 +35,21 @@ a:-webkit-any-link {
     color: rgb(204, 204, 204);
     cursor: pointer;
     text-decoration: underline;
-    
+
 }
 
 
-        /* .loginBox{
-            background-color: rgb(27, 108, 189);
+      .loginBox{
+            background-color: rgb(180, 154, 36);
             padding-top: 120px;
-            height: 410px;
+            height: 10px;
             width: 370px;
              border: solid rgb(61, 61, 61) 1px;
             border-radius: 5px;
             box-shadow: rgb(58, 58, 58) 0px 0px 42px;
             transition: 0.3s;
-        } */
-        /* .loginBox:hover{
+        }
+         /* .loginBox:hover{
             border: solid rgb(51, 51, 51) 1px;
             box-shadow: inset rgb(58, 58, 58) 0px 0px 32px;
         } */
@@ -77,7 +77,7 @@ a:-webkit-any-link {
 
 <body>
 
-    <div class="container" >
+    <div class="loginBox" >
         <x-guest-layout>
             <x-auth-card>
 

@@ -25,7 +25,7 @@
 
 <style>
    body{
-       background-color: rgb(47, 47, 47);
+       background-color: rgb(31, 88, 93);
        text-align: center;
        }
 
@@ -77,7 +77,7 @@
 </div>
 <div class="container">
     <h1>Esta bien hecho</h1>
-    <p>Aqui podre escribir lo que se me antoje, porque es mi <a href="/wikiEspacio"> <b>Espacio</b> </a></p>
+    <p>Aqui podre escribir lo que se me antoje, porque es mi <a href="https://es.wikipedia.org/wiki/Espacio"> <b>Espacio</b> </a></p>
 </div>
 <br><br><br>
 

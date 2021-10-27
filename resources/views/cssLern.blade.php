@@ -25,8 +25,9 @@
 
 
 <style>
+    body{background-color: rgb(12, 12, 119)}
 .boxAni {
-    position: relative;
+    position: absolute;
     opacity: 0%;
     background-color: rgb(179, 184, 179);
     height: 200px;
@@ -35,30 +36,29 @@
     display: inline-block;
     animation: rotation 3s linear alternate;
     box-shadow: white 0px 0px 50px;
-    top: -580px;
-
+    top: 220px;
+    left: 700px;
 }
-
 
 @keyframes rotation {
     0%{ transform: rotate(0deg);
-        /* top: 0px; */
         opacity: 0%;
     }
     50%{ transform: rotate(-200deg);
-         top: -580px;
+         top: 220px;
          background-color: blue;
          border-radius: 50%;
          opacity: 100%;
          box-shadow: white 0px 0px 40px;
          border: solid rgb(251, 251, 251) 10px;
+         transform: translateX(-400px)
     }
 
     75%{ transform: rotate(285deg);
-         top: -580px;
+         top: 220px;
          height: 400px;
-          width: 400px;
-          box-shadow: white 0px 0px 90px;
+         width: 400px;
+         box-shadow: white 0px 0px 90px;
          background-color: rgb(0, 0, 0);
          border: solid rgb(251, 251, 251) 40px;
          border-radius: 0%;
@@ -66,7 +66,7 @@
     }
 
     100%{ transform: rotate(585deg);
-         top: -500px;
+         top: 220px;
          height: 0px;
           width: 0px;
           box-shadow: white 0px 0px 140px;
@@ -76,6 +76,81 @@
          opacity: 0%;
     }
 }
+
+
+.looper {
+        height: 300px;
+        width: 300px;
+        background-color: rgb(177, 176, 175) ;
+         display: inline-block;
+        animation: perspect 4s infinite linear alternate;
+        box-shadow: 0px 0px 40px white;
+    }
+
+ @keyframes perspect {
+   0% {transform:perspective(300px) rotateY(0deg);
+      transform:perspective(300px) rotateX(0deg);
+    }
+
+   25% {transform:perspective(300px) rotateY(90deg);
+    transform:perspective(300px) rotateX(130deg);
+}
+
+   50% {transform:perspective(300px) rotateY(220deg);
+    transform:perspective(300px) rotateX(220deg);
+}
+
+   75% {transform:perspective(300px) rotateY(270deg);
+    }
+
+   100% {transform:perspective(300px) rotateY(360deg);
+         transform:perspective(300px) rotateX(60deg);
+        }
+    }
+
+    .mq{    display: inline-block
+            /* box-shadow: rgb(129, 129, 129) 0px 3px 68px ; */
+            height: 200px; width: 200px;
+            background-color: black;
+            animation: test 6s infinite alternate ease-in-out;
+            color: rgb(0, 0, 0);
+             position: absolute;
+        }
+        @keyframes test {
+            0%{back
+                height: 700px;
+            width: 0px;
+        opacity: 80%;}
+
+        50%{
+            background-color: rgb(251, 251, 14);
+        }
+        60%{
+            height: 10px;
+        }
+        70% {
+            background: red;
+             height: 300px;
+        }
+         90%{
+        opacity: 100%;
+        height: 372px;
+        width: 860px;
+        border-radius: 50px;
+        box-shadow: rgb(0, 4, 255) 0px 40px 120px;
+        background-color: rgb(255, 255, 255);
+        transform: rotateZ(90deg);
+    }
+     100%{
+        opacity: 100%;
+        height: 472px;
+        width: 460px;
+        border-radius: 90px;
+        box-shadow: rgb(12, 145, 185) 0px 40px 120px;
+        background-color: rgb(112, 112, 112);
+        transform: rotateZ(90deg);
+    }
+     }
 </style>
 </head>
 
@@ -87,19 +162,40 @@
   <br><br><br><br><br><br><br>
 <div class="container">
     <h1>Cascading Style Sheets</h1>
-        <p>Cascading Style Sheets (gestufte Gestaltungsbögen; kurz: CSS) ist eine Stylesheet-Sprache
+        <p> <a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets">Cascading Style Sheets</a>  (gestufte Gestaltungsbögen; kurz: CSS) ist eine Stylesheet-Sprache
           für elektronische Dokumente und zusammen mit HTML und <a href="/jss"><b>JavaScript</b></a>
           eine der Kernsprachen
           des World Wide Webs. Sie ist ein sogenannter living standard ‚lebendiger Standard‘ und wird
           vom World Wide Web Consortium beständig weiterentwickelt. Mit CSS werden Gestaltungsanweisungen
           erstellt, die vor allem zusammen mit den Auszeichnungssprachen HTML und XML (zum Beispiel bei SVG) eingesetzt werden.
         </p>
+        <img style="height:250px " src="images/csss.png" alt=""> <br> <br> <br>
 
-        <img style="height:250px " src="images/csss.png" alt=""> <br>
+        <hr style="color: white; border:white 5px solid">
 
+        <h4 style="color: white">Para poder darle estilo a nuestra pagina primero tendremos que saber que son los <a href="https://www.w3schools.com/cssref/css_selectors.asp"> <h3> "Selectores"</h3></a>
+            En CSS, los selectores son patrones que se utilizan para seleccionar los elementos que desea aplicar estilo. </h4>
+          <p>A contunuacion le daremos un ejemplo de los selectores mas basicos</p>
 
-<br><br> <hr style="color: white; border:white 5px solid
-">
+        <textarea style="background-color: black; color: rgb(207, 250, 207)" name="" id="" cols="30" rows="5">.box1{
+            <p class="selectorClass" ></p>
+            <p id="selectorID"></p>
+            </textarea>
+
+            <h1>En nuestra hoja de Estilo los selectores de class son llamados con 1 punto al principio porejemplo</h1><br>
+            <textarea style="background-color: black; color: rgb(207, 250, 207)" name="" id="" cols="30" rows="10">
+    .selectorClase {
+                        color:"red";
+                        font-size: "25px";
+                        }
+
+    #selectorId {
+                        color:"red";
+                        font-size: "25px";
+                        }
+                </textarea>
+
+<br><br> <hr style="color: white; border:white 5px solid">
 <br>
 <h2 style="color: rgb(255, 255, 255)">Anima-Cion!</h2>
 <h1 style="color: rgb(107, 107, 107)">Why not?</h1>
@@ -146,11 +242,9 @@ Ermöglicht das Pausieren und Wiederaufnehmen einer Animationssequenz.
     <h1>animation-name</h1>
     <p>Spezifiziert den Namen der @keyframes-at-Regel, welche die einzelnen Keyframes beschreibt.</p>
 
-    <textarea name="" id="" cols="30" rows="10">.box1{
+    <textarea style="background-color: black; color: rgb(207, 250, 207)" name="" id="" cols="30" rows="10">.box1{
         animation-name: nameExample;
         }
-
-
         @keyframes nameExample {
             from{ }
             to{ }
@@ -160,7 +254,7 @@ Ermöglicht das Pausieren und Wiederaufnehmen einer Animationssequenz.
     <h1>animation-duration</h1>
     <p>Legt die Dauer der Animation für einen kompletten Durchgang fest.</p>
 
-    <textarea name="" id="" cols="30" rows="10">.box1{
+    <textarea style="background-color: black; color: rgb(207, 250, 207)" name="" id="" cols="30" rows="10">.box1{
         animation-name: nameExample
         animation-duration: 2s;
         }
@@ -186,10 +280,13 @@ Ermöglicht das Pausieren und Wiederaufnehmen einer Animationssequenz.
     <p>Ermöglicht das Pausieren und Wiederaufnehmen einer Animationssequenz.</p>
 
 
+   <div class="looper"></div>
 
 
 
-    <br><br><br>
+
+    <div class="mq"></div>
+    <br><br><br><br><br><br><br><br><br>
 
 </div>
 

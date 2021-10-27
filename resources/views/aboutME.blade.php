@@ -25,7 +25,7 @@
 
 <style>
 .carEs{
-    height: 134px;
+
    background-image: url(images/flagEsp.png);
    background-repeat: no-repeat;
    background-size: contain;
@@ -79,7 +79,7 @@
 
                                      </div>
 
-                                     <div class="card text-white bg-warning  mb-3" style="z-index:-1; max-width: 10rem; max-height: 10rem;">
+                                     <div class="card text-white bg-warning  mb-3" style="max-width: 10rem; max-height: 10rem;">
                                        <a href="/jss">
                                        <div class="card-header"><H2>JS</H2></div>
                                        <div class="card-body">
@@ -104,7 +104,7 @@
                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                        </div>
                                      </div>
-                                     <div class="card text-white bg-secondary mb-3" style="z-index:-1; max-width: 18rem;">
+                                     <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
                                        <div class="card-header">Header</div>
                                        <div class="card-body">
                                          <h5 class="card-title">Secondary card title</h5>
@@ -128,7 +128,7 @@
                                        </div>
                                      </div>
 
-                                   <a href="/mecano"> <div class="card text-white bg-warning mb-3" style="z-index:-1; max-width: 18rem;">
+                                   <a href="/mecano"> <div class="card text-white bg-warning mb-3" style=" max-width: 18rem;">
                                        <div class="card-header">Mecanografia</div>
                                        <div class="card-body">
                                          <h5 class="card-title">Prueba Escribir sin pausas.</h5>
@@ -148,7 +148,7 @@
                                      </div>
                                     </a>
                                     <a href="">
-                                     <div class="card bg-light mb-3" style="z-index:-1; max-width: 18rem;">
+                                     <div class="card bg-light mb-3" style=" max-width: 18rem;">
                                        <div class="card-header">Header</div>
                                        <div class="card-body">
                                          <h5 class="card-title">Light card title</h5>
@@ -206,9 +206,7 @@
                             </div>
                                                             {{-- Contenido 2 --}}
 
-                            <div class="container">
-                                <div class="row justify-content-between" ></div>
-                            </div>
+                        
 
 
 

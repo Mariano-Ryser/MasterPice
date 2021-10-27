@@ -21,10 +21,11 @@
 <link rel="stylesheet" href="/css/app.css">
 <link rel="stylesheet" href="/css/tuercas.css">
 
-    <title>CSS</title>
+    <title>PHP</title>
 
 
 <style>
+body{background-color: rgb(78, 31, 122)}
 
 </style>
 </head>
@@ -33,19 +34,24 @@
     <x-tuercasComponent/>
   <x-navbar/>
 
-  <br><br><br><br><br><br><br>
+
+  <br><br><br><br><br>
+  <h1>PHP TU MEJOR AMIGO</h1>
+  <p> Imortante ! Buscar la opcion para achicar la imagen responsiva</p>
+  <img class="imgPhp" src="/images/phpp.png" alt="" style="height: 350px">
 <div style= "color:white; font-size:30px;" class="container">
 
   <h1>Zeichenketten verbinden in php (String concatenation)</h1>
+  <textarea style="background-color: black; color: rgb(207, 250, 207)" name="" id="" cols="28" rows="3">
+    $name = 'Peter';
+    $str = 'Ich heisse ' . $name . '.' ;
+    </textarea>
+    <br>
   <?php
+ $name = 'Peter';
+ $str = 'Ich heisse ' . $name . '.';
 
-  $name = 'Peter';
-  $str = 'Ich heisse ' . $name . '.';
-
-  echo "\$str = 'Ich heisseeee ' . \$name . '.'" . '<br>';
   echo $str . '<br>';
-
-
 
     // WHILE -------------------------------------------------------
     echo '<h1>php while-Schleife</h1>' . PHP_EOL;

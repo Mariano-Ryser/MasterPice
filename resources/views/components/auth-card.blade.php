@@ -3,7 +3,7 @@
         {{ $logo }}
     </div>
 
-    <div class="pt-5 py-3 overflow-hidden sm:rounded-lg" style="color: white">
+    <div class="w-full  py-3 overflow-hidden sm:rounded-lg" style="color: white; background-color:rgb(109, 93, 23);">
         {{ $slot }}
     </div>
 </div>

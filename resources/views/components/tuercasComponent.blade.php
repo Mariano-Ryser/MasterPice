@@ -4,7 +4,7 @@
     height: 200px;
     z-index: 0;
     opacity: 40%;
-    top:80px;
+    top:40px;
     left: -100px;
     animation-name: rotation1;
         animation-duration: 10s;

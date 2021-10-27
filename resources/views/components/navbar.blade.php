@@ -40,7 +40,7 @@ h4{color: black;}
 
 
              {{-- NAVBAR --}}
-              <nav class="pb-3 navbar navbar-light p-3 mb-0" style="background-color:black; position:fixed; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
+              <nav class="pb-3 navbar navbar-light p-3 mb-0" style="background-color:rgb(0, 0, 0); position:fixed; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
                 <div class="container-fluid d-flex justify-content-end sample-row">
                   {{-- <a class="navbar-brand" style="color:rgb(0, 0, 0)" href="#">PNL</a> --}}
 
@@ -67,6 +67,7 @@ h4{color: black;}
                           <a class="nav-link" href="/jss"><h5>JavaScript</h5></a>
                           <a class="nav-link" href="/phpp"><h5>PHP</h5></a>
                           <a class="nav-link" href="/about"><h5>About me</h5></a>
+                          <a class="nav-link" href="/test"><h5>Test</h5></a>
                           <a class="nav-link" href="/es"><h5>Spanish</h5></a>
                           <a class="nav-link" href="/de"><h5>Deutsch</h5></a>
                           <a class="nav-link" href="/en"><h5>Ingles</h5></a>

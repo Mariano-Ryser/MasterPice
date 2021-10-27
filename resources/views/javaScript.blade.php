@@ -24,8 +24,54 @@
     <title>BRAIN</title>
 
 <style>
+body{
+    background-color: rgb(107, 107, 7);
+}
 
+.pepe{
+    opacity: 0%;
+}
+
+.imgJs{
+    border: solid black 15px;
+    animation: giro 10s infinite alternate ease-in;
+}
+
+@keyframes giro {
+   0% {transform:perspective(300px) rotateY(0deg);
+      transform:perspective(300px) rotateX(0deg);
+      box-shadow: 0px 0px 50px rgb(246, 246, 126);
+    }
+
+   25% {transform:perspective(300px) rotateY(90deg);
+    transform:perspective(300px) rotateX(-40deg);
+    box-shadow: 0px 0px 50px rgb(250, 250, 209);
+}
+
+   50% {transform:perspective(300px) rotateY(-60deg);
+    /* transform:perspective(300px) rotateX(70deg); */
+    box-shadow: 0px 0px 70px rgb(59, 59, 49);
+   }
+
+   75% {transform:perspective(300px) rotateY(270deg);
+    }
+
+   100% {transform:perspective(300px) rotateY(60deg);
+         transform:perspective(300px) rotateX(60deg);
+         box-shadow: 0px 0px 100px rgb(245, 245, 1);
+        }
+    }
 </style>
+<script>
+    var pepe = document.getElementById('p1');
+    function ani() {
+  document.getElementById('img').className = 'imgJs';
+  img.style.transition = '10s';
+  document.getElementById('p1').className = 'pepe';
+  p1.style.transition = '2s';
+
+ }
+</script>
 
 </head>
 <x-tuercasComponent/>
@@ -34,17 +80,18 @@
 
   <br><br><br><br><br><br><br>
   <div class="container">
-      <h1>Cascading Style Sheets</h1>
-          <p>Cascading Style Sheets (gestufte Gestaltungsbögen; kurz: CSS) ist eine Stylesheet-Sprache
-            für elektronische Dokumente und zusammen mit HTML und <a href="/jss"><b>JavaScript</b></a>
-            eine der Kernsprachen
-            des World Wide Webs. Sie ist ein sogenannter living standard ‚lebendiger Standard‘ und wird
-            vom World Wide Web Consortium beständig weiterentwickelt. Mit CSS werden Gestaltungsanweisungen
-            erstellt, die vor allem zusammen mit den Auszeichnungssprachen HTML und XML (zum Beispiel bei SVG) eingesetzt werden.
-          </p>
+      <h1>JAVA SCRIPT ?</h1>
+<p id="p1" class="" style="font-size: 26px;">Das Zusammenspiel von Javascript mit Css ist wirklich hervorragend.</p>
   </div>
-  <img style="height:220px; "src="/images/jss.png" alt="">
+  <img id="img" class ="" style="height:220px; "src="/images/jss.png" >
 
+  <h1 onclick="ani()" style="font-size:45px ;color: white; cursor: pointer;">Click me</h1>
+
+  {{-- <textarea name="" id="" cols="60" rows="9">
+   <h1 onclick="ani()" >Click me</h1>
+
+   <img id="img" class ="" src="/images/jss.png" >
+    </textarea> --}}
 
 
 
