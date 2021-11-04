@@ -21,84 +21,22 @@
 <link rel="stylesheet" href="/css/app.css">
 <link rel="stylesheet" href="/css/tuercas.css">
 
-    <title>BRAIN</title>
+    <title>Home</title>
 
 <style>
-   body{
-       background-color: rgb(31, 88, 93);
-       text-align: center;
-       }
+ 
 
-
-.circle{
-    z-index: -3;
-    display: inline-block;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    border-left: 4px solid white;
-    /* border-top: 10px solid white; */
-    /* background-color: black; */
-    animation: rotation infinite 0.8s linear;
-}
-
-@keyframes rotation {
-    0%{ transform: rotate(0deg);
-    }
-    100%{ transform: rotate(360deg);
-    }
-}
 </style>
 
 </head>
 <x-tuercasComponent/>
 <body>
 
-     <x-navbar/>   {{-- NAVAR --}}
-
-<br><br><br><br> <br><br><br><br><br><br><br><br>
-
-<div class="circle">   {{-- Loading --}}
-</div>
-
-<br><br>
-<h4 style="color: white">Loading...</h4>
-
-<br>
-
-<br><br><br><br> <br><br><br><br><br><br><br><br>
-
-<div class="container"><h1>A Donde quieres llegar? mas lejos?</h1>
-    <h3>Pues primero tendras que aprender un poco</h3>
-    <p>Arriba a la derecha tienes un boton que te dirije a ciertos lugares
-        podras chusmear sin <a href="/wikiCompromiso">compromiso</a>, puedes dejar tus comentarios si es que quieres, todo aporta,
-        Espero que disfrutes de un buen viaje y puedas encontrar tu <a href="/dashboard"> <b>camino</b></a> .
-    </p>
-</div>
-<div class="container">
-    <h1>Esta bien hecho</h1>
-    <p>Aqui podre escribir lo que se me antoje, porque es mi <a href="https://es.wikipedia.org/wiki/Espacio"> <b>Espacio</b> </a></p>
-</div>
-<br><br><br>
-
-<div class="container">
-  <a href="/"><img src="/images/brainWelt.png" alt=""></a> <br> <br>
- <a href="/wikipediaCerebro"></a> <h4 style="color: cornsilk" >CEREBRO</h4>
-</div>
-
-<div class="container">
-    <h1>Otro Container mas para mi <a href="/WikiDasboard"></a><b>Dasboard?</b></h1>
-</div>
+     <x-navbar/>   
 
 
-     {{-- <footer style="background-color:rgb(0, 0, 0);
-     position:fixed;
-      z-index:-1;
-      bottom:0px;
-      width:100%;
-      height:200px;
-      border-top: solid 1px rgb(0, 0, 0)">dasda</footer> --}}
 
+  
     {{-- <x-app-layout>
         <x-slot name="header">
              <h2 class="font-semibold text-xl text-gray-800 leading-tight">

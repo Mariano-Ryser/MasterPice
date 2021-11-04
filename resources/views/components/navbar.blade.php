@@ -62,15 +62,16 @@ h4{color: black;}
                           <a class="nav-link active" aria-current="page" href="{{ route('login') }}"><h4>Home</h3></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="/html"><h5>HTML</h5></a>
-                          <a class="nav-link" href="/csss"><h5>CSS</h5></a>
-                          <a class="nav-link" href="/jss"><h5>JavaScript</h5></a>
-                          <a class="nav-link" href="/phpp"><h5>PHP</h5></a>
-                          <a class="nav-link" href="/about"><h5>About me</h5></a>
-                          <a class="nav-link" href="/test"><h5>Test</h5></a>
-                          <a class="nav-link" href="/es"><h5>Spanish</h5></a>
-                          <a class="nav-link" href="/de"><h5>Deutsch</h5></a>
-                          <a class="nav-link" href="/en"><h5>Ingles</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          <a class="nav-link" href="/"><h5>----</h5></a>
+                          
 
 
                         </li>
