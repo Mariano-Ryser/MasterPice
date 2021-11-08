@@ -32,19 +32,17 @@
     font-size: 25px;
 }
 
-h4{color: black;}
-
 
 #formLogout{height: 20px;}
 </style>
 
 
              {{-- NAVBAR --}}
-              <nav class="pb-3 navbar navbar-light p-3 mb-0" style="background-color:rgb(0, 0, 0); position:fixed; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
+              <nav class="pb-3 navbar navbar-light p-3 mb-0" style="background-color:rgb(255, 255, 255); position:fixed; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
                 <div class="container-fluid d-flex justify-content-end sample-row">
                   {{-- <a class="navbar-brand" style="color:rgb(0, 0, 0)" href="#">PNL</a> --}}
 
-                  <h4 class="m-3 color:white" style="color: rgb(223, 223, 223)"> Welcome {{ Auth::user()->spitzname }}</h4>
+                  <h4 class="m-3 color:white" style="color: rgb(0, 0, 0)"> Welcome {{ Auth::user()->spitzname }}</h4>
                   <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span  class="navbar-toggler-icon"></span>
                   </button>
@@ -62,16 +60,14 @@ h4{color: black;}
                           <a class="nav-link active" aria-current="page" href="{{ route('login') }}"><h4>Home</h3></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          <a class="nav-link" href="/"><h5>----</h5></a>
-                          
+
+                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
+                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
+                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
+                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
+                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
+                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
+
 
 
                         </li>

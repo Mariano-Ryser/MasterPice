@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background-color: #1d383f;
   text-align: center;
 }
 
@@ -77,24 +76,4 @@ input:focus-visible {
 
 #remember_me {
   cursor: pointer;
-}
-
-h1 {
-  color: #ffe46d;
-}
-
-h2 {
-  color: #a1a1a1;
-}
-
-h3 {
-  color: #d6d1b7;
-}
-
-h4 {
-  color: #fbeca1;
-}
-
-p {
-  color: white;
 }

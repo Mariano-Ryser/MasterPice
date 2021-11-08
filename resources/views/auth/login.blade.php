@@ -20,13 +20,15 @@
     <title>BRAIN</title>
 
     <style>
-       body{display: flex;
+    body{
+        background-color: black;
+    display: flex;
     text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
-    /* color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255); */
+     color: rgb(0, 0, 0);
+    /* background: rgb(255, 255, 255);  */
      padding-top: 30px;
 
 }
@@ -38,21 +40,17 @@ a:-webkit-any-link {
 
 }
 
-
       .loginBox{
-            background-color: rgb(180, 154, 36);
+            background-color: rgb(141, 124, 25);
             padding-top: 120px;
-            height: 10px;
-            width: 370px;
+            height: 710px;
+            width: 670px;
              border: solid rgb(61, 61, 61) 1px;
-            border-radius: 5px;
+            border-radius: 0px;
             box-shadow: rgb(58, 58, 58) 0px 0px 42px;
             transition: 0.3s;
         }
-         /* .loginBox:hover{
-            border: solid rgb(51, 51, 51) 1px;
-            box-shadow: inset rgb(58, 58, 58) 0px 0px 32px;
-        } */
+
         .loginLogo{
             z-index: 0;
             position: absolute;
