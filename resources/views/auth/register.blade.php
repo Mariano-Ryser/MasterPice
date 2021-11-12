@@ -18,13 +18,12 @@
     <title>BRAIN</title>
 
     <style>
-        body{
-            display: flex;
+        body{display: flex;
      text-align: center;
      justify-content: center;
      align-content: center;
-     color: rgb(0, 0, 0);
-     background: rgb(0, 0, 0);
+     /* color: rgb(0, 0, 0);
+     background: rgb(255, 255, 255); */
       padding-top: 30px;
  }
 
@@ -39,7 +38,7 @@
             background-color: rgb(180, 154, 36);
              padding-top: 94px;
              height: 510px;
-            width: 670px;
+             width: 370px;
              /* border: solid rgb(85, 85, 85) 1px; */
              border-radius: 5px;
               box-shadow: rgb(58, 58, 58) 0px 0px 42px;
@@ -134,7 +133,7 @@
 
             <!-- Confirm Password -->
             <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" /><br>
+                <x-label for="password_confirmation" :value="__('Confirm Password')" />
 
                 <x-input id="password_confirmation" class="block mt-1 w-full"
                                 type="password"

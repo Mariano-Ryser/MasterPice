@@ -23,3 +23,50 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
+Route::get('/about', function () {
+    return view('aboutME');
+});
+
+Route::get('/html', function () {
+    return view('html');
+});
+
+Route::get('/csss', function () {
+    return view('cssLern');
+});
+
+Route::get('/jss', function () {
+    return view('javaScript');
+});
+
+Route::get('/phpp', function () {
+    return view('php');
+});
+
+Route::get('/es', function () {
+    return view('spanish');
+});
+
+Route::get('/de', function () {
+    return view('deutsch');
+});
+
+Route::get('/en', function () {
+    return view('english');
+});
+
+Route::get('/mecano', function () {
+    return view('mecanografi');
+});
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/cv', function () {
+    return view('CV');
+});
+
+Route::get('/z1', function () {
+    return view('z1');
+});

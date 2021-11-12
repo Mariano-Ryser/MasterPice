@@ -1,6 +1,6 @@
 <style>
     .navbar-toggler {
-    z-index: 2;
+
     padding: .25rem .75rem;
     font-size: 0.8rem;
     line-height: 0;
@@ -32,42 +32,66 @@
     font-size: 25px;
 }
 
+h4{color: black;}
+
 
 #formLogout{height: 20px;}
 </style>
+<script>
 
+    function zIndexOpen() {
+    var mega = document.getElementById("mega");
+
+    mega.style.display = "none";
+    }
+
+    function zIndexClose() {
+        var mega = document.getElementById("mega");
+
+        mega.style.display = "block"
+
+    }
+</script>
 
              {{-- NAVBAR --}}
-              <nav class="pb-3 navbar navbar-light p-3 mb-0" style="background-color:rgb(255, 255, 255); position:fixed; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
+              <nav class="pb-3 navbar navbar-light p-3 mb-0" style="background: linear-gradient(
+                to bottom right,
+                rgb(0, 0, 0) 0%,
+                rgb(0, 0, 0) 30%,
+                rgb(235, 212, 7) 50%,
+                rgb(0, 0, 0) 70%,
+                rgb(6, 14, 5) 100%
+            );; position:fixed; top:0px; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
                 <div class="container-fluid d-flex justify-content-end sample-row">
                   {{-- <a class="navbar-brand" style="color:rgb(0, 0, 0)" href="#">PNL</a> --}}
 
-                  <h4 class="m-3 color:white" style="color: rgb(0, 0, 0)"> Welcome {{ Auth::user()->spitzname }}</h4>
-                  <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <h4 class="m-3 color:white" style="color: rgb(223, 223, 223)"> Welcome {{ Auth::user()->spitzname }}</h4>
+                  <button onclick="zIndexOpen()" class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span  class="navbar-toggler-icon"></span>
                   </button>
 
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                       <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Information</h4>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      <button onclick="zIndexClose()" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
-                    <div class="offcanvas-body bg-white">
+                    <div style="z-index: 2" class="offcanvas-body bg-white">
 
                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="{{ route('login') }}"><h4>Home</h3></a>
                         </li>
                         <li class="nav-item">
-
-                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
-                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
-                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
-                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
-                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
-                          <a class="nav-link" href="/"><h5>_ _ _ _ _ _</h5></a>
-
+                          <a class="nav-link" href="/html"><h5>HTML</h5></a>
+                          <a class="nav-link" href="/csss"><h5>CSS</h5></a>
+                          <a class="nav-link" href="/jss"><h5>JavaScript</h5></a>
+                          <a class="nav-link" href="/phpp"><h5>PHP</h5></a>
+                          <a class="nav-link" href="/about"><h5>About me</h5></a>
+                          <a class="nav-link" href="/test"><h5>Test</h5></a>
+                          <a class="nav-link" href="/es"><h5>Spanish</h5></a>
+                          <a class="nav-link" href="/de"><h5>Deutsch</h5></a>
+                          <a class="nav-link" href="/z1"><h5>z1</h5></a>
 
 
                         </li>
