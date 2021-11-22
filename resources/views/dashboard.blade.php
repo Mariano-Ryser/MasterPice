@@ -29,15 +29,25 @@
        width: 100vw; */
        display: flex;
        justify-content: center;
-       /* align-content: center; */
-       align-items: center;
+       /* align-items: center; */
        padding-top: 200px;
        /* background-color: rgb(0, 0, 0); */
-        background-image: url(/images/space3.jpg);
+        background-image: url(/images/space.jpg);
        /* opacity: 90%; */
-       background-repeat: no-repeat;
+       background-repeat: repeat;
+       background-size: cover;
        text-align: center;
-       overflow: hidden;
+       /* overflow: hidden; */
+       /* animation: espacio 20s infinite alternate ease-in-out; */
+       }
+
+       @keyframes espacio {
+           0%{
+               background-position-x: 0px;
+           }
+           100%{
+               background-position-x: -1100px;
+           }
        }
 
          /* div {
@@ -65,8 +75,8 @@
        @keyframes move {
            0%{opacity: 100%;
             transform:translate(0px,0px);
-
            }
+
            100% {opacity: 100%;
             transform:translate(0px,-20px);
            }
@@ -141,7 +151,7 @@
            box-shadow: inset black 0px 0px  100px;
        }
 }
-       .marte{
+       #marte{
            z-index: -2;
            cursor: pointer;
            position: absolute;
@@ -156,9 +166,9 @@
            box-shadow: inset black -30px -30px  50px;
            transform:translate(0px,-30px);
            animation: marte 5s ease-out 1;
-           transition: 1s;
+           transition: 7s;
        }
-       .marte:hover{
+       #marte:hover{
            cursor: pointer;
            height: 130px;
            width: 130px;
@@ -183,7 +193,7 @@
            height: 400px;
            width: 400px;
            border-radius: 50%;
-           background-image: url(/images/tierra2.jpg);
+           background-image: url(/images/earth2.jpg);
            background-position: center;
            background-size: cover;
            transform:translate(10px,20px) scale(1.0);
@@ -191,6 +201,7 @@
            transition: 3s;
            filter: blur(1px);
        }
+
        .tierra:hover{
         filter: blur(0px);
         box-shadow: inset black -50px -50px  90px;
@@ -227,12 +238,14 @@
            /* background-color: #ffffff10;
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter:blur(16px); */
+        display: none;
         animation: cucu 2s ease-in-out 1;
         animation-delay: 4s;
        }
 
 
-       .html{display: inline-block;
+       .html{
+           display: inline-block;
            cursor: pointer;
            position: relative;
            /* border: black solid 5px; */
@@ -377,7 +390,7 @@
             opacity: 100%;}
        }
 
-       .pac{display: inline-block;
+       .google{display: inline-block;
            cursor: pointer;
            position: relative;
            /* border: black solid 5px; */
@@ -386,16 +399,16 @@
            height: 170px;
            width: 170px;
            border-radius: 50%;
-           background-image: url(/images/pacman.png);
+           background-image: url(/images/googleLogo1.png);
            background-position: center;
            background-size: cover;
            box-shadow: inset black -50px -50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
            transform:translate(0px,-30px);
-           animation: pac 4s ease-out 1;
+           animation: google 4s ease-out 1;
            transition: 0.7s;
            filter: blur(0.9px)
        }
-       .pac:hover {
+       .google:hover {
            cursor: pointer;
            box-shadow: inset black -0px -0px  60px;
            transform: scale(1.0) translate(0px,-25px);
@@ -404,7 +417,7 @@
 
        }
 
-       @keyframes pac {
+       @keyframes google {
            from{box-shadow: inset black 50px 50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
             opacity: 0%;}
            to{box-shadow: inset black -50px -50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
@@ -447,29 +460,77 @@
             opacity: 100%;}
        }
 
+       .ableton{
+           display: inline-block;
+           cursor: pointer;
+           position: relative;
+           /* top:480px;
+           left: 1100px; */
+           height: 170px;
+           width: 170px;
+           border-radius: 50%;
+           background-image: url(/images/ableton.jpg);
+           background-position: center;
+           background-size: cover;
+           box-shadow: inset black -50px -50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
+           transform:translate(0px,-30px);
+           animation: ableton 2s ease-out 1;
+           transition: 0.7s;
+           filter: blur(0.9px)
+       }
+       .ableton:hover{
+           cursor: pointer;
+           transform: scale(1.0) translate(0px,-25px);
+           box-shadow: inset black -0px -0px  60px;
+           filter: blur(0px);
+       }
+
+       @keyframes ableton {
+           from{box-shadow: inset black 50px 50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
+            transform:translate(0px,0px);
+            opacity: 0%;}
+           to{box-shadow: inset black -50px -50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
+            transform:translate(0px,-30px);
+            opacity: 100%;}
+       }
+
 .punto{
+    cursor: pointer;
     position: absolute;
+    z-index: 3;
     top: 500px;
-    height: 150px;
+    height: 30px;
     width: 150px;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
     box-shadow: 0px 0px 66px rgb(255, 255, 255);
-    transition: 3s;
+    transition: 4s;
+    animation: navee 5s infinite alternate ease-in-out;
+}
+@keyframes navee {
+    0%{ box-shadow: 0px 0px 66px rgb(255, 255, 255);
+        transform: translateX(0px)
+    }
+    100%{ box-shadow: 0px 10px 36px rgb(255, 255, 255);
+        transform: translateX(100px)
+    }
 }
         /* Aqui hacer animacion de entrada. tapando al sol */
- .punto:hover{
+ /* .punto:hover{
     transform: translateX(60px);
     box-shadow: -60px 0px 30px rgb(255, 235, 119);
-}
+} */
 
 
 </style>
 
 </head>
-{{-- <x-tuercasComponent/> --}}
+ {{-- <x-tuercasComponent/> --}}
 <body>
- {{-- <x-navbar/> --}}
+ <x-navbar/>
+
+
+
 
 
 
@@ -480,22 +541,45 @@
     <acronym title="Css"><a href="/csss" target="_blank"><div class="css"></div></a></acronym>
     <acronym title="JavaScript"><a href="/jss" target="_blank"><div class="js"></div></a></acronym>
     <acronym title="Youtube"><a href="https://www.youtube.com" target="_blank"><div class="youtube"></div></a></acronym>
-    <acronym title="Retro Web"><a href="/html" target="_blank"><div class="pac"></div></a></acronym>
+    <acronym title="Google"><a href="/https://www.google.com/" target="_blank"><div class="google"></div></a></acronym>
     <acronym title="GitHub"><a href="https://github.com/Mariano-Ryser" target="_blank"><div class="github"></div></a></acronym>
-</div>
+    <acronym title="Ableton"><a href="https://www.ableton.com/de/" target="_blank"><div class="ableton"></div></a></acronym>
+  </div>
 
 
-<acronym title="Luna"><div class="luna"></div></acronym>
+
+{{-- <acronym title="Luna"><div class="luna"></div></acronym>
 <acronym title="Lebenslauf"><a href="/cv"><div class="tierra"></div></a></acronym>
-<acronym title="Marte"><a href=""><div class="marte"></div></a></acronym>
-<acronym title="Jupiter"><div class="jupiter"></div></acronym>
-<div class="punto"></div>
+<acronym title="Marte"><a href=""><div id="marte"></div></a></acronym>
+<acronym title="Jupiter"><div class="jupiter"></div></acronym> --}}
+
+<div class="punto" id="pno" onclick="cBlock()"></div>
+<script>
+
+    function cBlock(){
+
+        var cb = document.getElementById("mega");
+        var puntoNegro = document.getElementById("pno");
+        var Marte = document.getElementById("marte")
+        cb.style.display = "block";
+
+
+        puntoNegro.style.transform = "translateY(0px)translateX(-500px)";
+        puntoNegro.style.transition= "2s";
+        // puntoNegro.style.opacity = "0%";
+        puntoNegro.style.height = "0px";
+        puntoNegro.style.width = "279px";
+    }
+
+
+//Object.assign():
+Object.assign(ele.style,custum_style);
+</script>
 
 
 
 
-
-    {{-- <x-app-layout>
+  {{-- <x-app-layout>
         <x-slot name="header">
              <h2 class="font-semibold text-xl text-gray-800 leading-tight">
              {{ __('Pepito') }}

@@ -66,6 +66,9 @@ Route::get('/test', function () {
 Route::get('/cv', function () {
     return view('CV');
 });
+Route::get('/zrw', function () {
+    return view('zrw');
+});
 
 Route::get('/z1', function () {
     return view('z1');

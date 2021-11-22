@@ -22,21 +22,31 @@
 
 .tuerca2{
     position: absolute;
-    height: 300px;
-    z-index: -1;
-    opacity: 14%;
+    height: 100px;
+    z-index: -5;
+    opacity: 24%;
     top:370px;
     animation-name: rotation2;
-        animation-duration: 38s;
+        animation-duration: 35s;
         animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
+        -webkit-animation-timing-function: ease-in-out;
 }
 @keyframes rotation2 {
             0% {
+                height: 100px;
              transform:rotate(0deg);
+             opacity: 0%;
                 }
-             100% {
+
+             50% {
+                height: 300px;
              transform:rotate(-360deg);
+             opacity: 70%;
+                }
+                100% {
+                    height: 100px;
+             transform:rotate(0deg);
+             opacity: 0%;
                 }
             }
 
@@ -108,7 +118,7 @@
 
 
 
-<img class="tuerca1" src="{{ asset('images/Tuerca.png')}}">
+<a href="/"><img class="tuerca1" src="{{ asset('images/Tuerca.png')}}"></a>
 <img class="tuerca2" src="{{ asset('images/Tuerca.png')}}">
 <img class="tuerca3" src="{{ asset('images/Tuerca.png')}}">
 <img class="tuerca4" src="{{ asset('images/Tuerca.png')}}">

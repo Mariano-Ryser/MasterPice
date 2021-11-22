@@ -31,8 +31,13 @@
     text-decoration: none;
     font-size: 25px;
 }
+.navbar-light {
+    background-image: url(/images/cE.jpg)
+}
 
-h4{color: black;}
+h4{
+    color: black;
+}
 
 
 #formLogout{height: 20px;}
@@ -51,21 +56,16 @@ h4{color: black;}
         mega.style.display = "block"
 
     }
+
+
 </script>
 
              {{-- NAVBAR --}}
-              <nav class="pb-3 navbar navbar-light p-3 mb-0" style="background: linear-gradient(
-                to bottom right,
-                rgb(0, 0, 0) 0%,
-                rgb(0, 0, 0) 30%,
-                rgb(235, 212, 7) 50%,
-                rgb(0, 0, 0) 70%,
-                rgb(6, 14, 5) 100%
-            );; position:fixed; top:0px; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
+              <nav class="pb-3 navbar navbar-light p-3 mb-0" style=" position:fixed; top:0px; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
                 <div class="container-fluid d-flex justify-content-end sample-row">
                   {{-- <a class="navbar-brand" style="color:rgb(0, 0, 0)" href="#">PNL</a> --}}
 
-                  <h4 class="m-3 color:white" style="color: rgb(223, 223, 223)"> Welcome {{ Auth::user()->spitzname }}</h4>
+                  {{-- <h4 class="m-3 color:white" style="color: rgb(223, 223, 223)"> Welcome {{ Auth::user()->spitzname }}</h4> --}}
                   <button onclick="zIndexOpen()" class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span  class="navbar-toggler-icon"></span>
                   </button>
@@ -88,12 +88,10 @@ h4{color: black;}
                           <a class="nav-link" href="/jss"><h5>JavaScript</h5></a>
                           <a class="nav-link" href="/phpp"><h5>PHP</h5></a>
                           <a class="nav-link" href="/about"><h5>About me</h5></a>
-                          <a class="nav-link" href="/test"><h5>Test</h5></a>
-                          <a class="nav-link" href="/es"><h5>Spanish</h5></a>
-                          <a class="nav-link" href="/de"><h5>Deutsch</h5></a>
+                          {{-- <a class="nav-link" href="/es"><h5>Spanish</h5></a>
+                          <a class="nav-link" href="/de"><h5>Deutsch</h5></a> --}}
                           <a class="nav-link" href="/z1"><h5>z1</h5></a>
-
-
+                          <a class="nav-link" href="/zrw"><h5>zrw</h5></a>
                         </li>
                         <li >
                             <form id="formLogout" method="POST" action="{{ route('logout') }}">

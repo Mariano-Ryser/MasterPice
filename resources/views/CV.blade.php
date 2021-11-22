@@ -46,8 +46,8 @@
             height: 250px;
             width: 250px;
             border-radius: 50%;
-            background-image: url(/images/MR2.jpg);
-            /* background-image: url(/images/alien.jpeg); */
+             background-image: url(/images/MR2.jpg);
+             /* background-image: url(/images/alien.jpeg);  */
             /* background-color: red; */
             box-shadow: white 0px 0px 60px;
             background-size: cover;
@@ -59,6 +59,7 @@
                   from{opacity:0%}
                   to{opacity:100%}
               }
+              
 
               .mercurio{
            z-index: -1;

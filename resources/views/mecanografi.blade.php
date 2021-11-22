@@ -462,6 +462,9 @@
     Um eine nutzbringende Zukunft zu gestalten, müssen wir nur beginnen.
 
 
+
+
+
                                       PNL
 
     Cuando hablamos de programacion, lo primero que se nos viene a la cabeza, es una maquina, o tal vez una computadora, o algo parecido, pero...
@@ -565,16 +568,13 @@
     La verdad es que hay varias formas de realizar una misma tarea, por esa razón, permitirte probar nuevos enfoques y nuevas actitudes puede ser la pieza que falta para mejorar tu forma de interactuar con todos los eventos de tu vida.
 
 
+    Autopersonalfeedback
+    Posiblemente el tiempo mas duro, totalmente nervioso, confundido y agresivo
+    es como me siento, antes las personas que me rodean, todo es contra ami, estoy cansado, realmente muy cansado.
+    
 </p>
 
 
-<h1>O.C.M</h1>
-<p>Aqui estamos nuevamente escribiendo cosas sin sentido, solamente quiero encontrar un trabajo.</p>
-<h2>y porque?</h2>
-<br>
- <p>El porque es muy sencillo, ya siento que no aprendo nada, solo tengo que buscar por mi cuenta en un proyecto que no tiene fin,
-     me siento frustrado, un poco fracasado, estoy escribiendo cosas sin sentido, tanto por hacer sin ningun sentido alguno.
- </p>
 
 
 

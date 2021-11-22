@@ -26,26 +26,27 @@
 
     <style>
         body {
+            opacity: 100%;
               background-color: rgb(0, 0, 0);
             /* background: linear-gradient(
                to bottom right,
                rgb(29, 27, 27) 0%,
                #494419 50%,
                #ffd30e 100%
-           ); */
+           );
            /* overflow: hidden; */
              }
 
 
- div.espacio3D {
+  div.espacio3D {
   width: 300px;
   height: 300px;
   margin: 3em auto 0 auto;
-  border: 1px solid rgba(0,255,0,0.5);
+   border: 3px dashed rgba(255, 255, 255, 0.5);
   position: relative;
   perspective-origin: center -50%;
-  perspective: 500px;
-  transform: scale(0.75);
+  perspective: 900px;
+  transform: scale(0.55);
 
 }
 
@@ -55,8 +56,8 @@ div.cubo3D {
   background-color: rgba(0,255,0,0.5);
   position: absolute;
   transform-style: preserve-3d;
-  transform: translateZ(-150px);
-  animation: gira 6s linear infinite;
+  transform: translateZ(350px);
+  animation: gira 15s infinite ease-in-out;
 
 }
 
@@ -65,7 +66,10 @@ div.base {
   width: 150px;
   height: 150px;
   background-color: rgba(0,0,0,0.15);
-  transform: translateX(75px) translateY(75px) rotateX(90deg) translateZ(-200px);
+  transform: translateX(75px)
+   translateY(75px)
+    rotateX(90deg)
+     translateZ(-200px);
   box-shadow: 0 0 50px 100px rgba(158, 85, 85, 0.15);
 }
 aside.cara {
@@ -76,13 +80,13 @@ aside.cara {
   border: 1px solid rgba(255,150,0,0.75);
   color: rgba(255, 255, 255);
   font-size: 3em;
-  text-align: center;
+  /* text-align: center; */
   line-height: 298px;
   box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.75);
 }
 
 aside.cara1 { /* Frente */
-  transform: translateZ(150px);
+  transform: translateZ(190px);
 }
 
 aside.cara2 { /* Atrás */
@@ -107,19 +111,41 @@ aside.cara6 { /* arriba */
 
 @keyframes gira {
   0% {
-    transform: translateZ(-150px) rotateY(0deg)
-    rotateZ(0deg) rotateX(0deg) ;
+    transform:
+    translateX(-0px) translateZ(-250px)
+    rotate(0deg);
 
   }
+
+   25% {
+      transform: translateX(-250px)
+      rotateX(178deg)
+    }
+
+  50% {
+    transform:
+      translateZ(250px)
+      rotateZ(233deg)
+    }
+
+
+  75% {
+      transform: translateX(250px)
+      rotateY(321deg)
+    }
+
   100% {
-    transform: translateZ(-150px) rotateY(360deg)rotateZ(360deg) rotateX(360deg) ;
-  }
+    transform:
+      translateZ(-250px)
+      rotate(0deg);
+    }
+
 }
 /* ////////////CARTA //////////////*/
        .container {
            width: 400px;
            height: 240px;
-           animation: gira 6s linear infinite;
+           animation: gira 11s linear infinite;
 
        }
 
@@ -142,64 +168,82 @@ aside.cara6 { /* arriba */
        }
 
      .blockk {
+         border: dashed black 3px;
          display: inline-block;
          position: relative;
         height: 300px;
-        width: 500px;
+        width: 400px;
         border-radius: 20px;
         background-color: #ffffff10;
-        backdrop-filter: blur(16px);
-       -webkit-backdrop-filter:blur(16px);
-       animation: syb 2s infinite alternate linear;
+        backdrop-filter: blur(1px);
+       -webkit-backdrop-filter:blur(1px);
+       animation: syb 5s infinite alternate linear;
      }
 
      @keyframes syb {
-         from{ top:10px;
+         0%{ top:10px;
+            backdrop-filter: blur(1px);
+       -webkit-backdrop-filter:blur(1px);
 
          }
-         to{
-             top: -400px;
+         50%{
+            top: -400px;
+             /* backdrop-filter: blur(100px);
+       -webkit-backdrop-filter:blur(100px); */
+
+         }
+         70%{top: -300px;
+             backdrop-filter: blur(20px);
+       -webkit-backdrop-filter:blur(20px);
+
+         }
+         100%{
+            top: -300px;
+             backdrop-filter: blur(0px);
+       -webkit-backdrop-filter:blur(0px);
+
          }
      }
+
+
     </style>
+
 
 </head>
 
 <body>
-    <x-tuercasComponent/>
-  <x-navbar/>
-  <br><br><br><br><br><br>
+     {{-- <x-tuercasComponent/> --}}
+{{-- <x-navbar/> --}}
+  <br><br><br><br><br>
 
                    {{--//////// CREDIT CARD! /////////////--}}
 
 {{-- <div class="container">
     <div class="card">
-        Credit card
     </div>
 </div> --}}
 
 <br><br>         {{--//////// CUBE /////////////--}}
 
- <div class="espacio3D">
+ <a href="/"><div class="espacio3D" >
     <div class="cubo3D">
 
       <aside class="cara cara1">1</aside>
       <aside class="cara cara2">2</aside>
       <aside class="cara cara3">3</aside>
       <aside class="cara cara4">4</aside>
-      <aside class="cara cara5">5</aside>
-      <aside class="cara cara6">6</aside>
+      <aside class="cara cara5">5 </aside>
+      <aside class="cara cara6">6 </aside>
     </div>
   </div>
+</a>
 
 
-  <form action="">
-      <input type="text">
-  </form>
+
                 {{--//////// CRISTAL! /////////////--}}
 
-   {{-- <div class="blockk" >
-    Vidrio
+      {{-- <div class="blockk" >
+
    </div> --}}
 
                 {{--//////// CUBE /////////////--}}
