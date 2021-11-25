@@ -144,9 +144,8 @@ aside.cara6 { /* arriba */
 /* ////////////CARTA //////////////*/
        .container {
            width: 400px;
-           height: 240px;
-           animation: gira 11s linear infinite;
-
+           height: 200px;
+           animation: gira 15s linear infinite;
        }
 
        .card{
@@ -168,7 +167,7 @@ aside.cara6 { /* arriba */
        }
 
      .blockk {
-         border: dashed black 3px;
+         border: dashed rgb(255, 255, 255) 3px;
          display: inline-block;
          position: relative;
         height: 300px;
@@ -188,40 +187,40 @@ aside.cara6 { /* arriba */
          }
          50%{
             top: -400px;
+            height: 200px;
              /* backdrop-filter: blur(100px);
        -webkit-backdrop-filter:blur(100px); */
-
          }
          70%{top: -300px;
-             backdrop-filter: blur(20px);
+              backdrop-filter: blur(20px);
        -webkit-backdrop-filter:blur(20px);
 
          }
+
          100%{
-            top: -300px;
+            top: -400px;
+            
+            height: 600px;
+        width: 660px;
              backdrop-filter: blur(0px);
        -webkit-backdrop-filter:blur(0px);
 
          }
      }
-
-
     </style>
-
-
 </head>
 
 <body>
-     {{-- <x-tuercasComponent/> --}}
+       <x-tuercasComponent/>
 {{-- <x-navbar/> --}}
   <br><br><br><br><br>
 
                    {{--//////// CREDIT CARD! /////////////--}}
 
-{{-- <div class="container">
+ <div class="container">
     <div class="card">
     </div>
-</div> --}}
+</div>
 
 <br><br>         {{--//////// CUBE /////////////--}}
 
@@ -242,9 +241,9 @@ aside.cara6 { /* arriba */
 
                 {{--//////// CRISTAL! /////////////--}}
 
-      {{-- <div class="blockk" >
+      <div class="blockk" >
 
-   </div> --}}
+   </div>
 
                 {{--//////// CUBE /////////////--}}
 

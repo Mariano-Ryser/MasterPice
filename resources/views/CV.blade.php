@@ -10,160 +10,119 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-     {{-- font --}}
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
-
-{{-- <link rel="stylesheet" href="/css/app.css"> --}}
-<link rel="stylesheet" href="/css/tuercas.css">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
 
     <title>BRAIN</title>
 
 <style>
    body{
-       text-align: start;
-       display: flex;
-       padding-top: 130px;
-       background-color: rgb(0, 0, 0);
-        /* background-image: url(/images/space5.jpg);  */
-       /* opacity: 90%; */
-       background-repeat: repeat;
-       background-size: cover;
-
-       /* overflow: hidden; */
+       background-color: black;
        }
-       /* div{border: dashed rgba(138, 129, 13, 0.815) 4px;
-   margin: 5px;} */
 
-   .planet{
-       opacity: 30%
-   }
+              .pr{background: fixed;
+                    background-image: url(/images/fondo2.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px -250px;
+                    height: 800px;
+                }
+               .tu{
+                 height: 400px;
+                 animation: cierra 2s infinite alternate;
+               }
+               @keyframes cierra {
+                   0%{
+                    height: 400px;
+                   }
+                   100%{
+                    height: 00px;
+                   }
+               }
 
+                .se{background: fixed;
+                    background-image: url(/images/fondo3.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 550px;
+                }
+                .me{background: fixed;
+                    background-image: url(/images/fondo5.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 550px;
+                }
           #foto{
-            cursor: pointer;
-            display: inline-block;
-            height: 250px;
-            width: 250px;
-            border-radius: 50%;
-             background-image: url(/images/MR2.jpg);
-             /* background-image: url(/images/alien.jpeg);  */
-            /* background-color: red; */
-            box-shadow: white 0px 0px 60px;
-            background-size: cover;
-            background-position: center;
-            animation: aparicion alternate 1s ease-in-out 1;
+              position: absolute;
+              float:right;
+              /* right: 0px; */
+              /* border-bottom-right-radius: 196px 192px; */
+              height: 322px;
+              width:322px;
+              border-radius: 50%;
+              background-image: url(/images/MR2.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
             }
+                #WD{
+                    position: relative;
+                    display: inline-block;
+                }
+                h1{
+                font-size: 110px;
+                font-family: 'Bowlby One', cursive;
+            }
+            #web{color: rgb(252, 239, 59);
+                text-shadow:  black 0px 0px 20px;}
 
-              @keyframes aparicion{
-                  from{opacity:0%}
-                  to{opacity:100%}
-              }
-              
+            #de{
+                text-shadow:  black 0px 0px 20px;
+                color: rgb(105, 221, 51);
+            }
+            #veloper{position: absolute;
+                text-shadow:  black 0px 0px 10px;
+                left: 300px;
+                transform: rotateZ(41deg);
+                color: rgb(255, 255, 255);
+                  margin-bottom: 0px;
 
-              .mercurio{
-           z-index: -1;
-           cursor: pointer;
-           position: absolute;
-           top:150px;
-           left: 200px;
-           height: 200px;
-           width: 200px;
-           border-radius: 50%;
-           background-image: url(/images/mercurio2.jpg);
-           background-position: center;
-           background-size: cover;
-           box-shadow: inset black -50px -50px  50px;
-           transition: 1s;
-           filter: blur(1px);
-           animation: aparicion1 alternate 2s ease-in-out 1;
-              }
+                }
 
-              @keyframes aparicion1{
-                  from{opacity:0%}
-                  to{opacity:100%}
-              }
-       .jupiter{
-           z-index: -2;
-           cursor: pointer;
-           position: absolute;
-           top:190px;
-           right:200px;
-           height: 250px;
-           width: 250px;
-           border-radius: 50%;
-           background-image: url(/images/jupiter.jpg);
-           background-position: center;
-           background-size: cover;
-           box-shadow: inset black -50px -50px  50px;
-           filter: blur(2px);
-           animation: aparicion2 alternate 2.7s ease-in-out 1;
-              }
+                @media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1720px;
+}}
 
-              @keyframes aparicion2{
-                  from{opacity:0%}
-                  to{opacity:100%}
-              }
-       .planetazo{
-           z-index: -2;
-           cursor: pointer;
-           position: absolute;
-           top:550px;
-           left: -50px;
-           height: 350px;
-           width: 350px;
-           border-radius: 50%;
-           background-image: url(/images/planetazo.jpg);
-           background-position: center;
-           background-size: cover;
-           box-shadow: inset black -50px -50px  50px;
-           filter: blur(0.3px);
-           animation: aparicion3 alternate 4s ease-in-out 1;
-              }
-
-              @keyframes aparicion3{
-                  from{opacity:0%}
-                  to{opacity:100%}
-              }
 </style>
 
-<script>
-
-</script>
-
 </head>
-<x-tuercasComponent/>
+   <x-tuercasComponent/>
 <body>
-<x-navbar/>
+{{-- <x-navbar/> --}}
 
-<div class="containter style">
-    <a href="/dashboard"><div id="foto" ></div></a>
-    <p style="color:rgb(255, 255, 255);font-family: 'Balsamiq Sans', cursive; "  >Schon immer wollte ich wissen, wie eine Website programmiert wird und als ich die
-        Möglichkeit erhalten bei Opportunity dabei zu sein, habe ich meine Chance ergriffen. Mit
-        meinem Tatendrang will ich Ihr Team künftig unterstützen!
-        Wenn ich programmiere ist kein Tag wie der Andere – ich entdecke jeden täglich etwas
-        Neues und will immer mehr erreichen. Besonders fasziniert bin ich davon, wie viel einige
-        Zeilen Code ausmachen können. Als leidenschaftlicher Musiker entdecke ich viel Kreatives
-        in der Entwicklung von Websites. Es ist mir ein grosses Anliegen ansprechende Designs und
-        passende Lösungen umzusetzen. Mein Ziel ist es, in ein paar Jahren ein Fullstack-Developer
-        zu werden. Mich begeistert die Vorstellung einmal eine komplette App programmieren zu
-        können, weshalb ich ehrgeizig weiterlerne.
-        In die Materie tauche ich mit viel Engagement ein und mein Umfeld gibt mir immer wieder
-        das Feedback, dass ich sehr schnell die geeignete Lösung recherchieren kann. Ausserdem
-        bin ich ein positiver Mensch und ich wachse an Herausforderungen. Mit mir gewinnen Sie
-        eine Person die gerne im Team arbeitet und auch hilfsbereit ist. Meine Muttersprache ist
-        Spanisch und auf Deutsch wie auf Englisch kann ich mich unterhalten.
-        Bei einem persönlichen Gespräch gebe ich Ihnen mehr über mich bekannt und ich zeige
-        Ihnen gerne einige meiner Projekte.</p>
+
+<div class="container-fluid pr">
+
 </div>
 
-
-
-<div class="container planet">
-    <div class="planetazo"></div>
-    <div class="mercurio"></div>
-    <div class="jupiter"></div>
+<div class="container-fluid tu">
+    <x-tuercasComponent/>
 </div>
+
+<div class="container-fluid se">
+
+</div>
+
+<div class="container-fluid tu">
+
+</div>
+
+<div class="container-fluid me">
+
+</div>
+
 
 
     {{-- <x-app-layout>

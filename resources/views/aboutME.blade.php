@@ -24,6 +24,9 @@
     <title>AboutME</title>
 
 <style>
+    body{
+        background: linear-gradient(red,blue)
+    }
 .carEs{
 
    background-image: url(images/flagEsp.png);
@@ -204,9 +207,8 @@
 
                                 </div>
                             </div>
-                                                            {{-- Contenido 2 --}}
+                                                   
 
-                        
 
 
 

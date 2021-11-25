@@ -100,13 +100,13 @@
            transition: 2s;
 
        }
-       /* .luna:hover{
+        .luna:hover{
 
            height: 300px;
            width: 300px;
            box-shadow: inset black -10px -10px  100px;
 
-       } */
+       }
 
         @keyframes luna {
            from{
@@ -413,19 +413,13 @@
            box-shadow: inset black -0px -0px  60px;
            transform: scale(1.0) translate(0px,-25px);
            filter: blur(0px);
-
-
        }
-
        @keyframes google {
            from{box-shadow: inset black 50px 50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
             opacity: 0%;}
            to{box-shadow: inset black -50px -50px  50px,rgb(0, 0, 0) 30px 30px 120px 20px;
             opacity: 100%;}
        }
-
-
-
        .github{
            display: inline-block;
            cursor: pointer;
@@ -511,7 +505,16 @@
     0%{ box-shadow: 0px 0px 66px rgb(255, 255, 255);
         transform: translateX(0px)
     }
-    100%{ box-shadow: 0px 10px 36px rgb(255, 255, 255);
+    25%{box-shadow: -15px -15px 106px rgb(255, 255, 255);
+
+}
+    50%{box-shadow: 25px 29px 36px rgb(255, 255, 255);
+
+    }
+    75%{box-shadow: 15px 15px 56px rgb(255, 255, 255);
+
+}
+    100%{ box-shadow: -30px -30px 606px rgb(255, 255, 255);
         transform: translateX(100px)
     }
 }
@@ -521,40 +524,97 @@
     box-shadow: -60px 0px 30px rgb(255, 235, 119);
 } */
 
+#SO{
+position: absolute;
+z-index: 7;
+left: 5px;
+cursor: pointer;
+height: 30px;
+width: 30px;
+border-radius: 30px;
+ border: solid rgb(39, 39, 39) 1px;
+transition: 0.4s;
+}
+#SO:hover{
+    box-shadow: white 0px 0px 30px;
+}
+
+.OSMR{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+}
 
 </style>
 
 </head>
- {{-- <x-tuercasComponent/> --}}
+   {{-- <x-tuercasComponent/>  --}}
 <body>
- <x-navbar/>
-
-
-
-
-
-
+  <x-navbar/>
+<div onclick="SO()" id="SO"></div>
 
   <div class="container-fluid" id="mega" style="z-index: 1">
     <div class="flecha"></div>
-    <acronym title="HTML"><a href="/html" target="_blank"><div class="html"></div></a></acronym>
-    <acronym title="Css"><a href="/csss" target="_blank"><div class="css"></div></a></acronym>
-    <acronym title="JavaScript"><a href="/jss" target="_blank"><div class="js"></div></a></acronym>
-    <acronym title="Youtube"><a href="https://www.youtube.com" target="_blank"><div class="youtube"></div></a></acronym>
-    <acronym title="Google"><a href="/https://www.google.com/" target="_blank"><div class="google"></div></a></acronym>
-    <acronym title="GitHub"><a href="https://github.com/Mariano-Ryser" target="_blank"><div class="github"></div></a></acronym>
-    <acronym title="Ableton"><a href="https://www.ableton.com/de/" target="_blank"><div class="ableton"></div></a></acronym>
+    <acronym title="HTML"><a href="/html" target="_blank"><div id='html' class="html"></div></a></acronym>
+    <acronym title="Css"><a href="/csss" target="_blank"><div id='css'class="css"></div></a></acronym>
+    <acronym title="JavaScript"><a href="/jss" target="_blank"><div id='js'class="js"></div></a></acronym>
+    <acronym title="Youtube"><a href="https://www.youtube.com" target="_blank"><div id='youtube'class="youtube"></div></a></acronym>
+    <acronym title="Google"><a href="/https://www.google.com/" target="_blank"><div id='google' class="google"></div></a></acronym>
+    <acronym title="GitHub"><a href="https://github.com/Mariano-Ryser" target="_blank"><div id='github' class="github"></div></a></acronym>
+    <acronym title="Ableton"><a href="https://www.ableton.com/de/" target="_blank"><div id='ableton' class="ableton"></div></a></acronym>
+
   </div>
 
-
-
-{{-- <acronym title="Luna"><div class="luna"></div></acronym>
+<acronym title="Luna"><div class="luna"></div></acronym>
 <acronym title="Lebenslauf"><a href="/cv"><div class="tierra"></div></a></acronym>
 <acronym title="Marte"><a href=""><div id="marte"></div></a></acronym>
-<acronym title="Jupiter"><div class="jupiter"></div></acronym> --}}
+<acronym title="Jupiter"><div class="jupiter"></div></acronym>
 
 <div class="punto" id="pno" onclick="cBlock()"></div>
 <script>
+function SO(){
+      var SO = document.getElementById('SO');
+      SO.style.display ='none';
+      var html = document.getElementById('html');
+      var css = document.getElementById('css');
+      var js = document.getElementById('js');
+      var youtube = document.getElementById('youtube');
+      var google = document.getElementById('google');
+      var github = document.getElementById('github');
+      var ableton = document.getElementById('ableton');
+
+      html.classList.toggle("OSMR");
+      html.style.top = '150px';
+      html.style.transition = '0.2s';
+      html.style.boxShadow = "inset black 0px 0px 30px,white 0px 0px 0px ";
+      css.classList.toggle("OSMR");
+      css.style.top = '250px';
+      css.style.transition = '0.2s';
+      css.style.boxShadow = "inset black 0px 0px 30px,rgb(0, 0, 0) 0px 0px 0px 20px";
+      js.classList.toggle("OSMR");
+      js.style.top = '350px';
+      js.style.transition = '0.2s';
+      js.style.boxShadow = "inset black 0px 0px 30px,rgb(0, 0, 0) 0px 0px 0px 20px";
+      youtube.classList.toggle("OSMR");
+      youtube.style.top = '450px';
+      youtube.style.transition = '0.2s';
+      youtube.style.boxShadow = "inset black 0px 0px 30px,rgb(0, 0, 0) 0px 0px 0px 20px";
+      github.classList.toggle("OSMR");
+      github.style.top = '550px';
+      github.style.transition = '0.2s';
+      github.style.boxShadow = "inset black 0px 0px 30px,rgb(0, 0, 0) 0px 0px 0px 20px";
+      google.classList.toggle("OSMR");
+      google.style.top = '650px';
+      google.style.transition = '0.2s';
+      google.style.boxShadow = "inset black 0px 0px 30px,rgb(0, 0, 0) 0px 0px 0px 20px";
+      ableton.classList.toggle("OSMR");
+      ableton.style.top = '750px';
+      ableton.style.transition = '0.2s';
+      ableton.style.boxShadow = "inset black 0px 0px 30px,rgb(0, 0, 0) 0px 0px 0px 20px";
+}
 
     function cBlock(){
 
@@ -566,7 +626,7 @@
 
         puntoNegro.style.transform = "translateY(0px)translateX(-500px)";
         puntoNegro.style.transition= "2s";
-        // puntoNegro.style.opacity = "0%";
+        //puntoNegro.style.opacity = "0%";
         puntoNegro.style.height = "0px";
         puntoNegro.style.width = "279px";
     }

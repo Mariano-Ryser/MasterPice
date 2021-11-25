@@ -6,10 +6,14 @@
     opacity: 40%;
     top:40px;
     left: -100px;
+    transition: 2s;
     animation-name: rotation1;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
+}
+.tuerca1:hover{
+    left: -55px;
 }
 @keyframes rotation1 {
             0% {
@@ -75,7 +79,7 @@
     position: absolute;
     height: 500px;
     z-index: -1;
-    opacity: 34%;
+    opacity: 5%;
     top:1070px;
     right: 120px;
     animation-name: rotation4;
@@ -97,10 +101,10 @@
     height: 315px;
     z-index: -1;
     opacity: 14%;
-    top:1483.5px;
+    top: 1783.5px;
     right: 401px;
     animation-name: rotation5;
-        animation-duration: 50s;
+        animation-duration: 25s;
         animation-iteration-count: infinite;
         -webkit-animation-timing-function: linear;
 }
@@ -110,13 +114,11 @@
              transform:rotate(0deg);
                 }
              100% {
-             transform:rotate(360deg);
+             transform:rotate(360deg) ;
                 }
             }
 
 </style>
-
-
 
 <a href="/"><img class="tuerca1" src="{{ asset('images/Tuerca.png')}}"></a>
 <img class="tuerca2" src="{{ asset('images/Tuerca.png')}}">

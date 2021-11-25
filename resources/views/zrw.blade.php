@@ -28,23 +28,31 @@ body{
     background-color: rgb(60, 131, 74);
 }
 .container{
+    border-radius: 13px;
+    border:solid black 2px;
     margin-top: 150px;
-    background-color: rgb(151, 150, 150);
+    background: linear-gradient(90deg, rgb(36, 30, 30), rgb(139, 139, 194));
     height: 310px;
     overflow: hidden;
+    box-shadow: black 0px 0px 50px, inset 0px 0px 50px;
 }
 
+
 .container div{
+    border-radius: 4px;
     margin: 10px;
     height: 50px;
     width: 50px;
     border: solid black 1px;
     display: inline-block;
+    transition: 0.2s;
 }
 
 .container div:hover{
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    border-radius: 20px;
     background-color: blue;
-
+    transform: rotateZ(45deg);
 }
 
 
@@ -101,6 +109,37 @@ function un(){
   <div></div>
   <div></div>
  </div>
+
+
+ <div class="container"
+ style="display: flex;
+ justify-content: center;
+ align-items: center;">
+     <div class="10">
+         <div class="9">
+             <div class="8">
+                 <div class="7">
+                     <div class="6">
+                         <div class="5">
+                             <div class="4">
+                                 <div class="3">
+                                     <div class="2">
+                                         <div class="1">
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
 
 
   {{-- <x-app-layout>

@@ -26,6 +26,7 @@
 <style>
 body{
     background-color: rgb(107, 107, 7);
+
 }
 
 
@@ -53,6 +54,22 @@ body{
          box-shadow: 0px 0px 100px rgb(245, 245, 1);
         }
     }
+  .titulo{
+      transition: 3s;
+      opacity: 0%;
+      font-size: 45px;
+      animation: le 2s infinite alternate ease-in-out;
+  }
+  @keyframes le {
+      0%{
+        transform: translateX(0px)
+      }
+      100%{
+        transform: translateX(40px)
+      }
+  }
+
+
 </style>
 <script>
 
@@ -63,15 +80,36 @@ body{
 
   document.getElementById('img').className = 'imgJs';
   img.style.transition = '10s';
+  img.style.opacity = '100%';
+
 
   var p = document.getElementById('p1');
 
   p.style.transition = '2s';
   p.style.color = 'white';
   p.style.opacity ='100%';
-
-
  }
+
+     // // //  TITULO
+
+ function titulo() {
+     var titulo = document.getElementById('title');
+     titulo.classList.toggle("titulo")
+ }
+
+ function botoncito(){
+     var body1 = document.getElementById('body');
+     var imagenLogo = document.getElementById('img');
+     imagenLogo.style.transition = '10s';
+     imagenLogo.style.opacity = '0%';
+     body1.style.transition = '3s';
+     body1.style.background = 'none';
+     var fin = document.getElementById('fin');
+     fin.style.color = 'black';
+     var fin1 = document.getElementById('fin1');
+     fin1.style.color = 'black';
+ }
+
 </script>
 
 </head>
@@ -81,7 +119,7 @@ body{
 
   <br><br><br><br><br><br><br>
   <div class="container">
-      <h1>JAVA SCRIPT ?</h1>
+      <h1 id="fin">JAVA SCRIPT ?</h1>
   <div>
 <p id="p1" class="" style="font-size: 26px; opacity: 0%;">Das Zusammenspiel von Javascript mit Css ist wirklich hervorragend.</p>
 </div>
@@ -91,10 +129,32 @@ body{
 
   <div><h1 onclick="ani()" style="font-size:45px ;color: rgb(255, 255, 255); cursor: pointer;">Click me</h1></div>
 
-
+<div class="container" >
+ <h1 id="fin1" >Dom manupulation</h1>
+ <p>Wenn ein Anwender mit der Webseite interagiert, ist es oft nötig, je nach erfolgter Eingabe unterschiedliche Inhalte zur Verfügung zu stellen.
+    So könnte ein Login flexibel werden: Wenn der Benutzer schon registriert ist, kann er nach dem Einloggen einfach weitermachen, für neue Nutzer werden je nach Stand der Eingabe unterschiedliche Inhalte wie ein Anmeldeformular dynamisch nachgeladen.
+    Auch bei einem Bildwechsler benötigt man die Zurück und Weiter-Buttons erst in der Großansicht.</p>
+</div>
 <div class="container">
 
+    <h3 onclick="titulo()" id="title" class="">A continuacion un ejemplo...</h3>
+
+<p>si querememos asignarle una clase al Titulo de arriba, tenemos que hacer lo siguiente.<br>
+    " var title = document.getElementByClassName('title'); "
+  </p>
+
+  <p id='pp1' style="display: inline-block">P</p>
+  <p id='pp2' style="display: inline-block">a</p>
+  <p id='pp3' style="display: inline-block">l</p>
+  <p id='pp4' style="display: inline-block">a</p>
+  <p id='pp5' style="display: inline-block">b</p>
+  <p id='pp6' style="display: inline-block">r</p>
+  <p id='pp7' style="display: inline-block">a</p>
+<br>
+  <button onclick="botoncito()"></button>
+
 </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -106,7 +166,6 @@ body{
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-
 </body>
 </html>
 

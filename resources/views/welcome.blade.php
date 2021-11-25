@@ -94,13 +94,6 @@
 
   }
 }
-
-
-
-
-
-
-
 circle{
     fill: rgb(187, 35, 35);
 }
@@ -111,22 +104,20 @@ circle{
 
     <body >
 
-        <div style="border: black solid 2px" class="cajon relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
 
+        <div style="border: black solid 2px" class="cajon relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div  class="cabeza hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         {{-- <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 ">Dashboard</a> --}}
                     @else
                         {{-- <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 ">Log in</a> --}}
-
                         @if (Route::has('register'))
                         {{-- <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500">Register</a> --}}
                         @endif
                     @endauth
                 </div>
             @endif
-
             {{-- <div style="border: rgb(143, 20, 20) solid 10px" class="container"> --}}
 
 
@@ -368,7 +359,7 @@ circle{
                         <circle cx="64.111" cy="67.816" r="2.0837"/>
                         <circle cx="59.016" cy="72.31" r="1.9334"/>
                         <circle cx="65.514" cy="78.941" r="1.6995"/>
-                        <a href="/rw"><circle cx="68.304" cy="83.168" r=".68054"/></a>
+                        <circle cx="68.304" cy="83.168" r=".68054"/>
                         <circle id ="c1"cx="73.416" cy="82.867" r=".9311"/>
                         <circle cx="75.487" cy="78.524" r="1.4489"/>
                         <circle id ="c1" cx="76.99" cy="73.847" r="1.7663"/>
