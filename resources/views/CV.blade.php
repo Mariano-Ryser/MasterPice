@@ -33,14 +33,14 @@
                  height: 400px;
                  animation: cierra 2s infinite alternate;
                }
-               @keyframes cierra {
+               /* @keyframes cierra {
                    0%{
                     height: 400px;
                    }
                    100%{
                     height: 00px;
                    }
-               }
+               } */
 
                 .se{background: fixed;
                     background-image: url(/images/fondo3.jpeg);

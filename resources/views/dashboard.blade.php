@@ -553,7 +553,9 @@ transition: 0.4s;
 </head>
    {{-- <x-tuercasComponent/>  --}}
 <body>
-  <x-navbar/>
+
+   {{-- <x-navbar/> --}}
+
 <div onclick="SO()" id="SO"></div>
 
   <div class="container-fluid" id="mega" style="z-index: 1">

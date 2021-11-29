@@ -21,6 +21,7 @@
 
     <style>
        body{display: flex;
+        background-image: url(images/tabla.jpg);
     text-align: center;
     justify-content: center;
     align-content: center;
