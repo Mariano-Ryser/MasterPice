@@ -163,7 +163,6 @@ aside.cara6 { /* arriba */
                #494419 50%,
                #ffd30e 100%
            );
-
             /* background-image: url(/images/tar1.jpeg);
            background-position: center;
            background-size: cover; */
