@@ -57,7 +57,7 @@ overflow: auto;
 
 }
 .boton{
-    font-size: 3px;
+    font-size: 15px;
     border-radius: 30%;
     width: 30px;
     height: 30px;
@@ -70,7 +70,7 @@ overflow: auto;
     background-color: rgb(221, 221, 221);
 }
 
-.guardado{ 
+.guardado{
     z-index: 20;
     background-color: white;
     height: 100%;
@@ -85,7 +85,7 @@ overflow: auto;
 }
 .cerra{
     transition: 1s;
-    /* position: absolute; 
+    /* position: absolute;
     top: 0px;
     left: 0px; */
     opacity: 0%;
@@ -116,7 +116,7 @@ function closse() {
      win.classList.toggle("guardado");
   }
 
-  
+
 
   function min() {
     var min = document.getElementById('window');
