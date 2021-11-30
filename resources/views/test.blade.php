@@ -156,50 +156,55 @@ aside.cara6 { /* arriba */
            width: 100%;
            height: 100%;
            border-radius: 20px;
-           box-shadow: 0px 0px 90px black;
-           background: linear-gradient(
+           box-shadow:inset 0px 0px 40px black;
+         background: linear-gradient(
                to bottom right,
                rgb(29, 27, 27) 0%,
                #494419 50%,
                #ffd30e 100%
-           );
+           ); 
+
+           /* background-image: url(/images/tar1.jpeg);
+           background-position: center;
+           background-size: cover; */
          transform: translateZ(300px)
        }
 
      .blockk {
-         border: dashed rgb(255, 255, 255) 3px;
+         /* border: dashed rgb(255, 255, 255) 3px; */
          display: inline-block;
          position: relative;
         height: 300px;
         width: 400px;
+        top: -500px;
         border-radius: 20px;
-        background-color: #ffffff10;
+         background-color: #00000010; 
         backdrop-filter: blur(1px);
        -webkit-backdrop-filter:blur(1px);
        animation: syb 5s infinite alternate linear;
      }
 
      @keyframes syb {
-         0%{ top:10px;
+         0%{ 
+             top:10px; 
             backdrop-filter: blur(1px);
        -webkit-backdrop-filter:blur(1px);
 
          }
          50%{
-            top: -400px;
+             top: -400px; 
             height: 200px;
-             /* backdrop-filter: blur(100px);
-       -webkit-backdrop-filter:blur(100px); */
+           
          }
-         70%{top: -300px;
+         70%{
+             top: -300px; 
               backdrop-filter: blur(20px);
        -webkit-backdrop-filter:blur(20px);
 
          }
 
          100%{
-            top: -400px;
-            
+            top: -400px; 
             height: 600px;
         width: 660px;
              backdrop-filter: blur(0px);
@@ -207,18 +212,25 @@ aside.cara6 { /* arriba */
 
          }
      }
+
+
+
+     
+
+    
     </style>
 </head>
 
 <body>
        <x-tuercasComponent/>
-{{-- <x-navbar/> --}}
+<x-navbar/> 
   <br><br><br><br><br>
 
                    {{--//////// CREDIT CARD! /////////////--}}
 
  <div class="container">
     <div class="card">
+
     </div>
 </div>
 
@@ -245,9 +257,10 @@ aside.cara6 { /* arriba */
 
    </div>
 
-                {{--//////// CUBE /////////////--}}
+                {{--//////// Frente y dorso /////////////--}}
 
-
+               
+    
 
 
    <!-- Optional JavaScript; choose one of the two! -->

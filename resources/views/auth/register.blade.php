@@ -22,6 +22,7 @@
      text-align: center;
      justify-content: center;
      align-content: center;
+     background-image: url(images/tabla.jpg);
      /* color: rgb(0, 0, 0);
      background: rgb(255, 255, 255); */
       padding-top: 30px;

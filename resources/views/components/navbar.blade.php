@@ -5,7 +5,7 @@
     font-size: 0.8rem;
     line-height: 0;
     background-color: rgb(40, 83, 109);
-    border: 2px solid black;
+    border: 2px solid rgb(241, 239, 239);
     /* border-radius: .25rem; */
     transition: box-shadow .15s ease-in-out;
     transition: 0.3s;
@@ -32,7 +32,7 @@
     font-size: 25px;
 }
 .navbar-light {
-    background-image: url(/images/cE.jpg)
+    /* background-image: url(/images/cE.jpg) */
 }
 
 h4{
@@ -61,7 +61,7 @@ h4{
 </script>
 
              {{-- NAVBAR --}}
-              <nav class="pb-3 navbar navbar-light p-3 mb-0" style=" position:fixed; top:0px; width:100% ;border-bottom: solid 2px rgb(0, 0, 0);">
+              <nav class="pb-3 navbar navbar-light p-3 mb-0" style=" position:fixed; top:0px; width:100% ;">
                 <div class="container-fluid d-flex justify-content-end sample-row">
                   {{-- <a class="navbar-brand" style="color:rgb(0, 0, 0)" href="#">PNL</a> --}}
 

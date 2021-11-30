@@ -41,13 +41,13 @@ a:-webkit-any-link {
 
 
       .loginBox{
-            background-color: rgb(180, 154, 36);
+            background-color: rgb(124, 105, 22);
             padding-top: 120px;
             height: 10px;
             width: 370px;
              border: solid rgb(61, 61, 61) 1px;
             border-radius: 5px;
-            box-shadow: rgb(58, 58, 58) 0px 0px 42px;
+            box-shadow: rgb(0, 0, 0) 0px 0px 42px;
             transition: 0.3s;
         }
          /* .loginBox:hover{

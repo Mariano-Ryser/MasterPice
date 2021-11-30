@@ -25,120 +25,116 @@
 
 <style>
 body{
-    background-color: rgb(60, 131, 74);
+    background: rgb(163, 175, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.container{
-    border-radius: 13px;
-    border:solid black 2px;
-    margin-top: 150px;
-    background: linear-gradient(90deg, rgb(36, 30, 30), rgb(139, 139, 194));
-    height: 310px;
-    overflow: hidden;
-    box-shadow: black 0px 0px 50px, inset 0px 0px 50px;
+.ventana{
+    background-color: white;
+    height: 400px;
+width: 500px;
+border-radius: 10px;
+border: 1px solid black;
+box-shadow: gray 0px 0px 40px;
+overflow: auto;
+  resize: both;
+  min-width: 250px;
+  min-height: 150px;
+  transition: 0.2s;
+
+}
+.top{
+    cursor: pointer;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgb(187, 187, 187);
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: end;
+
+}
+.boton{
+    font-size: 3px;
+    border-radius: 30%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 5px;
+    background-color: gray;
+
+}
+.boton:hover{
+    background-color: rgb(221, 221, 221);
 }
 
-
-.container div{
-    border-radius: 4px;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-    border: solid black 1px;
-    display: inline-block;
-    transition: 0.2s;
+.guardado{ 
+    z-index: 20;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+   box-shadow: gray 0px 0px 40px;
+   overflow: auto;
+    resize: both;
+    min-width: 250px;
+   min-height: 150px;
+}
+.cerra{
+    transition: 1s;
+    /* position: absolute; 
+    top: 0px;
+    left: 0px; */
+    opacity: 0%;
+    height: 0%;
+    width: 0%;
 }
 
-.container div:hover{
-    box-shadow: rgb(0, 0, 0) 0px 0px 10px;
-    border-radius: 20px;
-    background-color: blue;
-    transform: rotateZ(45deg);
+.min{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
 
 </style>
 <script>
-function un(){
-    // var block = document.getElementById("box");
-    var elements = document.getElementsByClassName('boxx')[0];
 
-    // block.style.border="red 1px solid";
-    elements.style.border="red 5px solid";
-}
+function closse() {
+    var clo = document.getElementById('window');
+    clo.classList.toggle("cerra");
+
+  }
+
+  function grosse(){
+   var win = document.getElementById('window');
+     win.classList.toggle("guardado");
+  }
+
+  
+
+  function min() {
+    var min = document.getElementById('window');
+    min.classList.toggle("min");
+  }
 </script>
 
 </head>
 <body>
     <x-tuercasComponent/>
     <x-navbar/>
- <div class="container">
-  <div class='boxx' id="box" onclick="un()"></div>
-  <div class='boxx' id="box"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
- </div>
 
-
- <div class="container"
- style="display: flex;
- justify-content: center;
- align-items: center;">
-     <div class="10">
-         <div class="9">
-             <div class="8">
-                 <div class="7">
-                     <div class="6">
-                         <div class="5">
-                             <div class="4">
-                                 <div class="3">
-                                     <div class="2">
-                                         <div class="1">
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
-
-
-
+<div id= "window" class="ventana">
+    <div class="top">
+        <button onclick="min()" class="boton">_</button>
+        <button onclick="grosse()" class="boton">□</button>
+        <button onclick="closse()" class="boton">X</button></div>
+</div>
 
 
 

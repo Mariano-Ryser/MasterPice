@@ -554,7 +554,7 @@ transition: 0.4s;
    {{-- <x-tuercasComponent/>  --}}
 <body>
 
-   {{-- <x-navbar/> --}}
+    <x-navbar/>
 
 <div onclick="SO()" id="SO"></div>
 

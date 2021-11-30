@@ -22,16 +22,49 @@
        background-color: black;
        }
 
-              .pr{background: fixed;
+              .pr   {
+                   display:flex;
+                   justify-content:space-between;
+                   align-items: center;
+                    background: fixed;
                     background-image: url(/images/fondo2.jpeg);
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: 0px -250px;
                     height: 800px;
                 }
+
+                .pr div {
+                    height: 550px;
+                    width: 400px;
+                    /* border: black 4px solid; */
+                }
+                .uno {
+
+                    background: fixed;
+                     background-image: url(/images/fondo1.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .dos{
+                    background: fixed;
+                     background-image: url(/images/fondo1.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+                .tres{
+                    background: fixed;
+                     background-image: url(/images/fondo1.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+
+
                .tu{
                  height: 400px;
-                 animation: cierra 2s infinite alternate;
+
                }
                /* @keyframes cierra {
                    0%{
@@ -47,7 +80,48 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 550px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
                 }
+
+                .se div {
+                     /* border: 1px solid rgb(146, 146, 146); */
+                    height: 800px;
+                    width: 900px;
+                    border-radius: 50%;
+                }
+
+
+
+              .ojo-L{
+                    background: fixed;
+                    background-image: url(/images/fondo3.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: rgb(255, 217, 217);
+                    background-blend-mode: multiply;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    animation: cierra 5s infinite alternate;
+              }
+                @keyframes cierra {
+                   0%{
+                    height: 200px;
+                   }
+
+                   100%{
+                    height: 800px;
+                   }
+               }
+              .ojo-R{
+                    background: fixed;
+                     background-image: url(/images/fondo3.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+              }
+
                 .me{background: fixed;
                     background-image: url(/images/fondo5.jpeg);
                     background-repeat: no-repeat;
@@ -104,14 +178,22 @@
 
 
 <div class="container-fluid pr">
-
+  <div class="uno"></div>
+  <div class="dos"></div>
+  <div class="tres"></div>
 </div>
 
 <div class="container-fluid tu">
-    <x-tuercasComponent/>
+
 </div>
 
 <div class="container-fluid se">
+    <div class="ojo-L">
+
+        background-color: rgb(250, 212, 212); <br>
+        background-blend-mode: multiply;
+    </div>
+    <div class="ojo-R"></div>
 
 </div>
 

@@ -1,3 +1,18 @@
+
+ <style>
+    body{display: flex;
+     background-image: url(images/tabla.jpg);
+ text-align: center;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+ /* color: rgb(0, 0, 0);
+ background: rgb(255, 255, 255); */
+  padding-top: 30px;
+
+}
+
+ </style>
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
